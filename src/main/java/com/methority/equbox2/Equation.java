@@ -219,14 +219,20 @@ public class Equation {
     }
     if (what == 1) {
       if (where == 1) {
+        if (num == 0)
+            num = 1;
 	la += num;
 	ra += num;
       }
       if (where == 2) {
+        if (num == 0)
+            num = 1;
 	lb += num;
 	rb += num;
       }
       if (where == 3) {
+        if (num == 0)
+            num = 1;
 	lc += num;
 	rc += num;
       }
@@ -239,14 +245,20 @@ public class Equation {
 
    if (what == 2) {
       if (where == 1) {
+       if (num == 0)
+            num = 1;
 	la -= num;
 	ra -= num;
       }
       if (where == 2) {
+       if (num == 0)
+            num = 1;
 	lb -= num;
 	rb -= num;
       }
       if (where == 3) {
+       if (num == 0)
+            num = 1;
 	lc -= num;
 	rc -= num;
       }

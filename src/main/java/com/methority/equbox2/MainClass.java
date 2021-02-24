@@ -158,6 +158,8 @@ public class MainClass extends JFrame {
         newPanel.add(act7, constraints);
 
         //=====================================================
+
+        getRootPane().setDefaultButton(buttonLogin);
         
         constraints.gridx = 0;
         constraints.gridy = 7;
