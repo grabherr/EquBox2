@@ -61,6 +61,9 @@ public class Equation {
         return ret;
     }
 
+    double FixConst(double a, double b) {
+        return a*b;
+    }
     
     double Fix(double a, double b) {
         if (a == 0)
@@ -115,7 +118,7 @@ public class Equation {
       if (e.charAt(i) == '=') {
 	right = true;
 	if (num > 0)
-	  ld = Fix(num, sign);
+	  ld = FixConst(num, sign);
 	num = 0.;
 	sign = 1.;
 	continue;
@@ -151,7 +154,7 @@ public class Equation {
       num = 10*num + d;
       //cout << d << " " << num << " " << e[i] << endl;
     }
-    rd = Fix(num, sign);
+    rd = FixConst(num, sign);
   
 
   
@@ -346,6 +349,9 @@ public class Equation {
         ret += Add(lb, "y", false);
         ret += Add(lc, "z", false);
         ret += Add(ld, "",false);
+
+        if (m_first == true)
+            ret += "0";
         
         ret += "=";
         
@@ -354,6 +360,9 @@ public class Equation {
         ret += Add(rb, "y", false);
         ret += Add(rc, "z", false);
         ret += Add(rd, "", false);
+ 
+        if (m_first == true)
+            ret += "0";
     
         return ret;
     }
