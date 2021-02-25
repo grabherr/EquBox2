@@ -7,7 +7,7 @@ package com.methority.equbox2;
 
 /**
  *
- * @author manfred
+ * @author louis
  */
 public class MainPanel extends javax.swing.JPanel {
 

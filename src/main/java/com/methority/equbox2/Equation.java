@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
 package com.methority.equbox2;
 
 /**
  *
- * @author manfred
+ * @author louis
  */
 public class Equation {
 
